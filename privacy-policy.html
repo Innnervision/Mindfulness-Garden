@@ -194,7 +194,16 @@
     </ul>
     <div class="highlight">This information is stored locally on your device and, if you are signed in, synced to your private Firebase Firestore account. We do not sell or share health data with advertisers.</div>
 
-    <h3>2.3 Device Information</h3>
+    <h3>2.3 Location Information</h3>
+    <p>With your permission, the App requests your device's <strong>approximate location</strong> (low accuracy GPS) for one purpose only: to automatically detect your local time of day and season. This drives the garden's ambient theme — sunrise, daytime, sunset, night, spring, summer, autumn, or winter.</p>
+    <ul>
+      <li>Location is used only on-device and is <strong>never stored on our servers</strong></li>
+      <li>Coordinates are sent to the free <a href="https://nominatim.openstreetmap.org" target="_blank" rel="noopener">OpenStreetMap Nominatim API</a> solely to retrieve your city/country name for display</li>
+      <li>Location permission is <strong>optional</strong> — the app falls back to device clock if you deny it</li>
+      <li>Your coordinates are never shared with advertisers or third parties</li>
+    </ul>
+
+    <h3>2.5 Device Information</h3>
     <ul>
       <li>Device type and model</li>
       <li>Operating system version (Android)</li>
@@ -203,7 +212,7 @@
       <li>Crash logs and diagnostic information</li>
     </ul>
 
-    <h3>2.4 Analytics Data</h3>
+    <h3>2.6 Analytics Data</h3>
     <ul>
       <li>Screens viewed and features used</li>
       <li>Session frequency and duration</li>
@@ -299,6 +308,12 @@
           <td>In-app subscription management</td>
           <td>Purchase history, subscription status</td>
           <td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com</a></td>
+        </tr>
+        <tr>
+          <td><strong>OpenStreetMap Nominatim</strong></td>
+          <td>Reverse geocoding (city name from GPS coordinates)</td>
+          <td>Approximate GPS coordinates (sent once, not stored)</td>
+          <td><a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">osmfoundation.org</a></td>
         </tr>
         <tr>
           <td><strong>Google Play Services</strong></td>
